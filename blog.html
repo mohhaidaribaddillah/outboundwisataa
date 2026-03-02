@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Blog & Artikel – Labirin Adventure</title>
+    <meta name="description"
+        content="Temukan tips seru, panduan outbound, dan informasi menarik seputar wisata labirin di blog Labirin Adventure. Baca artikel terbaru kami di sini." />
+    <meta name="keywords"
+        content="blog outbound, artikel wisata labirin, tips team building, panduan outbound anak, wisata edukasi bandung, berita labirin adventure" />
+    <meta name="author" content="haidar" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog & Artikel – Labirin Adventure" />
+    <meta property="og:description"
+        content="Temukan tips seru, panduan outbound, dan informasi menarik seputar wisata labirin." />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="https://labirintadventure.com/blog.html" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200" />
+
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- JSON-LD Schema for Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Labirin Adventure",
+      "description": "Artikel dan insights seputar dunia outbound dan wisata alam.",
+      "url": "https://labirintadventure.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Labirin Adventure",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://labirintadventure.com/assets/logo.svg"
+        }
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.svg" alt="Labirin Adventure Logo" class="logo-img" />
+                <span class="logo-text">Labirin<span class="logo-accent">Adventure</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1519395612519-9b90c9509f6e?w=1600&q=80"
+                alt="Blog Labirin Adventure" loading="eager" />
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Blog</span>
+            </div>
+            <h1>Jurnal Petualangan</h1>
+            <p>Berbagi cerita, tips, dan inspirasi dari dunia outbound dan wisata alam</p>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="section blog-section">
+        <div class="container">
+            <!-- Search & Filter -->
+            <div class="blog-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Cari artikel..." aria-label="Cari artikel" />
+                    <button type="button" aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filters" id="categoryFilters">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="Tips & Trik">Tips & Trik</button>
+                    <button class="filter-btn" data-filter="Wisata">Wisata</button>
+                    <button class="filter-btn" data-filter="Edukasi">Edukasi</button>
+                    <button class="filter-btn" data-filter="Team Building">Team Building</button>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Article 1 -->
+                <div class="blog-card" data-category="Tips & Trik">
+                    <div class="blog-img-wrap">
+                        <img src="assets/img/outbound-1.webp" alt="Tips Outbound" loading="lazy" />
+                        <span class="blog-cat">Tips & Trik</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 15 Februari 2025</span>
+                        <h3><a href="blog-detail-1.html">10 Tips Sukses Outbound Team Building yang Wajib Diketahui</a>
+                        </h3>
+                        <p>Persiapkan tim Anda dengan tips-tips jitu untuk memaksimalkan manfaat outbound team
+                            building...</p>
+                        <a href="blog-detail-1.html" class="read-more">Baca Selengkapnya <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="blog-card" data-category="Wisata">
+                    <div class="blog-img-wrap">
+                        <img src="assets/img/outbound-2.webp" alt="Wisata Labirin" loading="lazy" />
+                        <span class="blog-cat">Wisata</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 10 Februari 2025</span>
+                        <h3><a href="blog-detail-2.html">Mengenal Wisata Labirin: Seru, Edukatif, dan Menantang</a></h3>
+                        <p>Wisata labirin bukan sekadar hiburan biasa. Di balik tantangannya tersimpan manfaat luar
+                            biasa...</p>
+                        <a href="blog-detail-2.html" class="read-more">Baca Selengkapnya <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="blog-card" data-category="Edukasi">
+                    <div class="blog-img-wrap">
+                        <img src="assets/img/outbound-3.webp" alt="Outbound Anak" loading="lazy" />
+                        <span class="blog-cat">Edukasi</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 5 Februari 2025</span>
+                        <h3><a href="blog-detail-3.html">Manfaat Outbound untuk Perkembangan Anak yang Luar Biasa</a>
+                        </h3>
+                        <p>Outbound bukan hanya soal bermain. Aktivitas ini memberikan dampak positif besar bagi tumbuh
+                            kembang anak...</p>
+                        <a href="blog-detail-3.html" class="read-more">Baca Selengkapnya <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 4 -->
+                <div class="blog-card" data-category="Team Building">
+                    <div class="blog-img-wrap">
+                        <img src="assets/img/outbound-4.webp" alt="Kerja Sama Tim" loading="lazy" />
+                        <span class="blog-cat">Team Building</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 2 Februari 2025</span>
+                        <h3><a href="blog-detail-4.html">Mengapa Team Building Penting untuk Perusahaan Startup?</a>
+                        </h3>
+                        <p>Dalam lingkungan startup yang dinamis, kekompakan tim adalah kunci. Simak alasan mengapa Anda
+                            butuh ini...</p>
+                        <a href="blog-detail-4.html" class="read-more">Baca Selengkapnya <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 5 -->
+                <div class="blog-card" data-category="Wisata">
+                    <div class="blog-img-wrap">
+                        <img src="assets/img/outbound-5.webp" alt="Wisata Alam" loading="lazy" />
+                        <span class="blog-cat">Wisata</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 28 Januari 2025</span>
+                        <h3><a href="blog-detail-5.html">5 Destinasi Wisata Alam Terbaik di Bandung untuk Healing</a>
+                        </h3>
+                        <p>Butuh rehat sejenak dari hiruk pikuk kota? Inilah rekomendasi tempat wisata alam yang wajib
+                            dikunjungi...</p>
+                        <a href="blog-detail-5.html" class="read-more">Baca Selengkapnya <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 6 -->
+                <div class="blog-card" data-category="Tips & Trik">
+                    <div class="blog-img-wrap">
+                        <img src="assets/img/outbound-6.webp" alt="Tips Camping" loading="lazy" />
+                        <span class="blog-cat">Tips & Trik</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 20 Januari 2025</span>
+                        <h3><a href="blog-detail-6.html">Perlengkap Wajib Saat Camping Ceria Bersama Keluarga</a></h3>
+                        <p>Jangan sampai liburan jadi repot karena kurang persiapan. Cek daftar perlengkapan wajib ini
+                            sebelum berangkat...</p>
+                        <a href="blog-detail-6.html" class="read-more">Baca Selengkapnya <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="text-center mt-40">
+                <div class="pagination">
+                    <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CTA -->
+    <section class="section cta-section" id="kontak">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Punya Pertanyaan Lain?</h2>
+                <p>Tim kami siap membantu menjawab segala pertanyaan Anda seputar paket dan layanan kami.</p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/6282211221909?text=Halo%20Labirin%20Adventure%2C%20saya%20ingin%20bertanya%20seputar%20artikel%20blog"
+                        target="_blank" class="btn btn-white">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                    <a href="tel:+6282211221909" class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i> Telepon Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <img src="assets/logo.svg" alt="Labirin Adventure" class="logo-img" />
+                            <span>Labirin<span class="logo-accent">Adventure</span></span>
+                        </a>
+                        <p>Penyedia paket outbound dan wisata labirin terpercaya. Menciptakan pengalaman tak terlupakan
+                            untuk keluarga, sekolah, dan perusahaan.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/6282211221909" target="_blank" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Navigasi</h4>
+                        <ul>
+                            <li><a href="index.html">Beranda</a></li>
+                            <li><a href="about.html">Tentang Kami</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Layanan</h4>
+                        <ul>
+                            <li><a href="index.html#paket">Paket Outbound</a></li>
+                            <li><a href="index.html#paket">Wisata Labirin</a></li>
+                            <li><a href="index.html#paket">Team Building</a></li>
+                            <li><a href="index.html#paket">Outbound Sekolah</a></li>
+                            <li><a href="index.html#paket">Night Maze</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Kontak</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Jl. Petualangan No. 1, Bandung, Jawa Barat</li>
+                            <li><i class="fas fa-phone"></i> <a href="tel:+6282211221909">+62 822-1122-1909</a></li>
+                            <li><i class="fas fa-envelope"></i> <a
+                                    href="mailto:info@labirintadventure.com">info@labirintadventure.com</a></li>
+                            <li><i class="far fa-clock"></i> Senin – Minggu, 07.00 – 18.00 WIB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Labirin Adventure. Semua hak dilindungi.</p>
+                <p>Dibuat dengan <i class="fas fa-heart" style="color:#f0a500"></i> untuk petualangan terbaik</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WA -->
+    <a href="https://wa.me/6282211221909?text=Halo%20Labirin%20Adventure%2C%20saya%20ingin%20bertanya" target="_blank"
+        class="float-wa" id="floatWa" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-wa-tooltip">Chat WhatsApp</span>
+    </a>
+
+    <!-- FLOATING UP -->
+    <button class="float-up" id="floatUp" aria-label="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
